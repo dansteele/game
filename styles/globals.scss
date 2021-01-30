@@ -1,0 +1,27 @@
+@import "colours";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Russo+One&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $bg-color;
+}
+
+@import "typography";

@@ -1,0 +1,15 @@
+@import "colours";
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  left: 50%; /* horizontal alignment */
+  top: 45%; /* vertical alignment */
+  transform: translate(-50%, -50%); /* precise centering */
+  font-size: 5em;
+}
