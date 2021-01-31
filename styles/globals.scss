@@ -6,10 +6,14 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: $bg-color;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
 
@@ -19,9 +23,9 @@ a {
 main {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: $bg-color;
+  justify-content: flex-start;
+  width: 1366px;
+  height: 768px;
 }
 
 @import "typography";
