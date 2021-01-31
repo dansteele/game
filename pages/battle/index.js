@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { setSyntheticLeadingComments } from "typescript";
 
 const attack = (kind) => {
-  console.log(`Hit with a ${kind} attack`);
+  alert(`Hit with a ${kind} attack`);
 };
 
 export default function Battle() {
