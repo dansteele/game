@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "../../styles/Battle.module.scss";
-import Player from "../../lib/units/player";
+import Player from "../../lib/units/player/index";
+import Brute from "../../lib/units/brute/index";
 
 const attack = (kind) => {
   alert(`Hit with a ${kind} attack`);
@@ -18,10 +19,13 @@ export default function Battle() {
             height={768}
           />
         </span>
-        <Player />
-        <div className={styles.ui}>
-          <button onClick={() => attack("heavy")}>Heavy attack</button>
-          <button onClick={() => attack("light")}>Light attack</button>
+        <div className={styles.wrapper}>
+          <Player />
+          <div className={styles.ui}>
+            <button onClick={() => attack("heavy")}>Heavy attack</button>
+            <button onClick={() => attack("light")}>Light attack</button>
+          </div>
+          <Brute />
         </div>
       </main>
     </>
