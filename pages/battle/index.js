@@ -1,9 +1,6 @@
-import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 import styles from "../../styles/Battle.module.scss";
-import { motion } from "framer-motion";
-import { setSyntheticLeadingComments } from "typescript";
+import Player from "../../lib/units/player";
 
 const attack = (kind) => {
   alert(`Hit with a ${kind} attack`);
@@ -21,6 +18,7 @@ export default function Battle() {
             height={768}
           />
         </span>
+        <Player />
         <div className={styles.ui}>
           <button onClick={() => attack("heavy")}>Heavy attack</button>
           <button onClick={() => attack("light")}>Light attack</button>
