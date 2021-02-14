@@ -1,0 +1,10 @@
+@import "styles/colours.scss";
+
+.statusBar {
+  display: flex;
+  font-size: 1.2em;
+  align-self: center;
+  background-color: $bg-color;
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 4px;
+}

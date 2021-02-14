@@ -21,7 +21,7 @@ export default function Battle() {
         </span>
         <div className={styles.wrapper}>
           <Player />
-          <div className={styles.ui}>
+          <div>
             <button onClick={() => attack("heavy")}>Heavy attack</button>
             <button onClick={() => attack("light")}>Light attack</button>
           </div>
