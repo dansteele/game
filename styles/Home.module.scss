@@ -8,12 +8,17 @@
 
 .title {
   position: absolute;
-  left: 50%; /* horizontal alignment */
-  top: 45%; /* vertical alignment */
-  transform: translate(-50%, -50%); /* precise centering */
+  left: 25%; /* horizontal alignment */
   font-size: 3em;
 }
 
 .start {
-  font-size: 1em;
+  font-size: 0.7em;
+  background-color: $bg-color;
+  background-image: url("/textures/dark_blue.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 0.3em 0.7em 0.3em 0.7em;
+  border-radius: 5px;
 }

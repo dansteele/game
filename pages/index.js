@@ -20,7 +20,7 @@ export default function Home() {
           height={768}
         />
         <span className={styles.title}>
-          <motion.h1
+          <motion.div
             initial="hidden"
             animate="visible"
             variants={{
@@ -36,13 +36,13 @@ export default function Home() {
               },
             }}
           >
-            Desdemona's Dirge
-          </motion.h1>
-          <span className={styles.start}>
-            <Link href="/battle">
-              <a>Start</a>
-            </Link>
-          </span>
+            <h1>Dirge</h1>
+            <span>
+              <Link href="/battle">
+                <a className={styles.start}>Start</a>
+              </Link>
+            </span>
+          </motion.div>
         </span>
       </main>
     </>
